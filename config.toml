@@ -1,0 +1,39 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Yusen A data player Using R"
+theme = "hugo-lithium-theme"
+googleAnalytics = "UA-92792949-1"
+disqusShortname = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+enableEmoji= true
+footnotereturnlinkcontents="↩"
+publishDir = "docs"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/rstudio/blogdown"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/rstudio"
+
+[params]
+    description = "A website of data playing"
+
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.9.0"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    [params.logo]
+    url = "yus.png"
+    width = 50
+    height = 50
+    alt = "Logo"
+
